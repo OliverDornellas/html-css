@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+      <H1>Imagens dinâmicas</H1>
+      <p>Tente abrir esse site em vários dispositivos diferentes ou simplismente aumente o tamanho de seu navegador.</p>
+
+      <picture>
+          <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+         <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+          <img src="imagens/foto-g.png" alt="imagen flexivel">
+      </picture>
+
+      <h1>Reproduzindo Áudio</h1>
+      <!-- <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+      <audio src="midia/guanacast-33.mp3" controls  ></audio>
+      ´formatos compativeis MP3, NAV OGG -->
+
+      <audio preload="metadata"  controls >
+          <source src="midia/Wooden Train Whistle.mp3" type="audio/mpeg">
+      </audio>
+      <!--essas são as duas formars de reproduzir audios em um site.Lembrando que nem todo navegador aceitar formatos mp3, por isso deveram usar outros formatos listados acima-->
+</body>
+</html>
